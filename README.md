@@ -22,18 +22,22 @@ Implement monitoring and observability
 Configure alerting system
 
 # Architecture Overview
-User → Backend App (Node.js) → Database
-                ↓
-          EC2 Instance
-                ↓
-   ┌───────────────────────────┐
-   │ Monitoring Stack          │
-   │ - Prometheus              │
-   │ - Grafana                 │
-   │ - Node Exporter           │
-   └───────────────────────────┘
-                ↓
-          Email Alert (SMTP)
+
+User 
+  ↓
+Backend Application (Node.js)
+  ↓
+Database
+  ↓
+EC2 Instance
+  ↓
+Monitoring Stack:
+  - Prometheus
+  - Grafana
+  - Node Exporter
+  ↓
+Email Alert (SMTP)
+
 # Technologies Used
 🔹 Backend
 
