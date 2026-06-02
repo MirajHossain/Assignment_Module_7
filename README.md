@@ -21,26 +21,24 @@ Automate deployment using GitHub Actions
 Implement monitoring and observability
 Configure alerting system
 
-# Architecture Overview
+🏗 Architecture Overview
 
 User
-  |
-  v
+↓
 Backend Application (Node.js)
-  |
-  v
+↓
 Database
-  |
-  v
+↓
 AWS EC2 Instance
-  |
-  v
+↓
 Monitoring Stack
-  - Prometheus
-  - Grafana
-  - Node Exporter
-  |
-  v
+
+Prometheus
+Grafana
+Node Exporter
+↓
+
+
 Email Alert (SMTP)
 
 
