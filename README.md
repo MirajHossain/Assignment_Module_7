@@ -23,20 +23,26 @@ Configure alerting system
 
 # Architecture Overview
 
-User 
-  ↓
+User
+  |
+  v
 Backend Application (Node.js)
-  ↓
+  |
+  v
 Database
-  ↓
-EC2 Instance
-  ↓
-Monitoring Stack:
+  |
+  v
+AWS EC2 Instance
+  |
+  v
+Monitoring Stack
   - Prometheus
   - Grafana
   - Node Exporter
-  ↓
+  |
+  v
 Email Alert (SMTP)
+
 
 # Technologies Used
 🔹 Backend
